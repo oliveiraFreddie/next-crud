@@ -1,34 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Simple CRUD Application with Firebase
+
+## Introduction
+
+This project is a straightforward CRUD (Create, Read, Update, Delete) application developed using Next.js, TypeScript, Tailwind CSS, and Firebase Firestore for the database. It allows users to manage records containing names and ages. The application provides basic data management functionalities, such as adding, editing, and deleting records, and is built with modern web technologies.
+
+![CRUD](https://github.com/oliveiraFreddie/screenshots/blob/1ffdd3936e7a0d21b4a114f8068f034e881f2273/Captura%20de%20tela%202023-09-18%20183205.png)
+
+## Features
+
+- Create, read, update, and delete (CRUD) operations for managing names and ages.
+- Built with Next.js, TypeScript, and Tailwind CSS for a modern and responsive user interface.
+- Data storage and retrieval powered by Firebase Firestore.
+- Minimalistic and user-friendly design for ease of use.
+
+## Prerequisites
+
+Before running this project, ensure you have the following installed:
+
+- Node.js and npm: [Download and Install Node.js](https://nodejs.org/)
+- Git: [Download and Install Git](https://git-scm.com/)
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository:**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+   ```shell
+   git clone https://github.com/oliveiraFreddie/nextCrud
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2. **Navigate to the project directory:**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+   ```shell
+   cd nextCrud
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+   ```
 
-## Learn More
+3. **Install project dependencies:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```shell
+   npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Configure Firebase:**
 
-## Deploy on Vercel
+   Create a Firebase project on the Firebase Console.
+   Set up Firebase Authentication and Firestore.
+   Add your Firebase configuration to the project by updating the config.ts file with your Firebase credentials.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Start the development server:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```shell
+   npm run dev
+   ```
+
+## Usage
+
+    Click the "Add New" button to create a new entry with a name and age.
+    Existing entries are displayed in a list, and you can edit or delete them.
+    All data is stored in Firebase Firestore.
+    Feel free to customize and expand upon this project as needed for your own use case.
